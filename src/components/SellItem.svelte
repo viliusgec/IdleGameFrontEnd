@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { PlayerItem, selectedPlayerItemData } from '../stores/itemStore';
+	import { PlayerItem, selectedPlayerItemData, sellItem } from '../stores/itemStore';
 	export let playerItem;
 	export let number: number = 0;
-	export function sellItem() {
+	export function sellItems() {
+		sellItem(playerItem, number)
 		console.log(number);
 		console.log($selectedPlayerItemData);
 	}
@@ -21,7 +22,7 @@
 	</div>
 </section>
 <button
-	on:click={() => sellItem()}
+	on:click={() => sellItems()}
 	type="button"
 	class="w-full uppercase bg-gray-700 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-gray-800 transition duration-200 each-in-out"
 	>Sell</button
