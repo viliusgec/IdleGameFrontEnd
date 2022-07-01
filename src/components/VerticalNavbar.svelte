@@ -4,7 +4,18 @@
 	playerSkillData.subscribe((value) => {skills = value});
 </script>
 
-<div class="flex flex-col w-56 bg-white overflow-hidden">
+<ul class="menu bg-base-100 w-56">
+{#each skills as skill}
+    <li class="hover-bordered">
+        <a
+            href="/{skill.name}"
+        >
+        {skill.name} : {skill.experience}
+        </a>
+    </li>
+{/each}
+</ul>
+<!-- <div class="flex flex-col w-56 bg-white overflow-hidden">
     {#each skills as skill}
     <ul class="flex flex-col py-4">
         <li>
@@ -20,4 +31,4 @@
         </li>
     </ul>
     {/each}
-</div>
+</div> -->
