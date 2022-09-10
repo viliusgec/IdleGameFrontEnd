@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Card from '../components/card.svelte';
-    import { trainingSkillData, loadTrainingSkillData } from '../stores/trainingSkillStore';
-    loadTrainingSkillData('Woodcutting')
+	import ItemCard from '../../components/ItemCard.svelte';
+    import { playerItemData, loadPlayerItemData, PlayerItem } from '../../stores/itemStore'
+    loadPlayerItemData();
 </script>
 
 <div class="mb-16">
@@ -12,8 +12,8 @@
 				aria-label="Behind the scenes People "
 				class="lg:flex px-10 pt-10 md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around"
 			>
-				{#each $trainingSkillData as skill}
-					<Card skill={skill} skillName = 'Woodcutting' />
+				{#each $playerItemData as playerItem}
+                    <ItemCard playerItem={playerItem} />
 				{/each}
 			</div>
 		</div>

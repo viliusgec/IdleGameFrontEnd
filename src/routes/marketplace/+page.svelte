@@ -1,6 +1,6 @@
 <script lang="ts">
-	import MarketplaceItemCard from '../components/MarketplaceItemCard.svelte';
-    import { playerItemData, loadPlayerItemData, PlayerItem } from '../stores/itemStore'
+	import MarketplaceItemCard from '../../components/MarketplaceItemCard.svelte';
+    import { playerItemData, loadPlayerItemData, PlayerItem } from '../../stores/itemStore'
     loadPlayerItemData();
 </script>
 
