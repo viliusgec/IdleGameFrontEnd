@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ItemCard from '../components/ItemCard.svelte';
-    import { selectedPlayerItemData, playerItemData, loadPlayerItemData, PlayerItem } from '../stores/itemStore'
-    import SellItem from '../components/SellItem.svelte'
+    import { playerItemData, loadPlayerItemData, PlayerItem } from '../stores/itemStore'
     loadPlayerItemData();
 </script>
 
@@ -20,8 +19,3 @@
 		</div>
 	</dh-component>
 </div>
-{#if $selectedPlayerItemData.itemName}
-<div>
-    <SellItem playerItem={$selectedPlayerItemData} />
-</div>
-{/if}

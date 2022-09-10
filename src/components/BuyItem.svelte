@@ -13,23 +13,22 @@
 </script>
 <!-- Make it similar to ItemCard sell -->
 <section>
-	<h2>Sell: {playerItem.itemName}</h2>
 	<div>
-		<input type="number" bind:value={number} min="0" max={playerItem.ammount} />
+		<input class="input input-bordered input-primary input-sm w-full max-w-xs" type="number" bind:value={number} min="0" max={playerItem.ammount} />
 	</div>
 	<div>
-		<input type="range" bind:value={number} min="0" max={playerItem.ammount} />
+		<input type="range"class="range" bind:value={number} min="0" max={playerItem.ammount} />
 	</div>
 </section>
 <button
-	on:click={() => sellItems()}
-	type="button"
-	class="w-full uppercase bg-gray-700 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-gray-800 transition duration-200 each-in-out"
-	>Sell</button
->
-<button
 	on:click={() => cancel()}
 	type="button"
-	class="w-full uppercase bg-red-700 text-white px-6 py-2 rounded font-medium mx-3 transition duration-200 each-in-out"
+	class="w-1/3 uppercase bg-red-700 btn"
 	>Cancel
 </button>
+<button
+	on:click={() => sellItems()}
+	type="button"
+	class="w-1/3 uppercase bg-gray-700 btn"
+	>Buy</button
+>

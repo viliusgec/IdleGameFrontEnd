@@ -43,6 +43,7 @@ export class PlayerItem {
 export let playerItemData = writable([])
 export let selectedPlayerItemData = writable(new PlayerItem())
 
+// TODO: Sort items by name
 export const loadPlayerItemData = async () => {
     try {
         const response = await fetch(`${itemsUrl}/GetPlayerItems`, {

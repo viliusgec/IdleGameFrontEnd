@@ -10,19 +10,19 @@
 	<div class="text-md font-bold text-blue-200 lg:flex-grow">
 		<a
 		href="/"
-		class="block mt-4 uppercase lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+		class="btn btn-outline btn-primary"
 	>
 		{username} : {money}
 	</a>
 		<a
 			href="/"
-			class="block mt-4 uppercase lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+			class="btn btn-outline btn-primary"
 		>
 			Skills
 		</a>
 		<a
 			href="/bank"
-			class=" block uppercase mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+			class="btn btn-outline btn-primary"
 		>
 			Bank
 		</a>
@@ -31,6 +31,12 @@
 			class="block uppercase mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
 		>
 			Shop
+		</a>
+		<a
+			href="/marketplace"
+			class="block uppercase mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+		>
+			Marketplace
 		</a>
 	</div>
 	<div class="flex ">
