@@ -2,10 +2,10 @@
   "name": "sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "dev": "vite dev dev",
+    "build": "vite dev build",
+    "package": "vite dev package",
+    "preview": "vite dev preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -32,6 +32,7 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/kit": "^1.0.0-next.480",
-    "daisyui": "^2.17.0"
+    "daisyui": "^2.17.0",
+    "vite": "^3.1.0"
   }
 }
