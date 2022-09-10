@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "autoprefixer": "^10.4.2",
@@ -32,6 +31,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/kit": "^1.0.0-next.480",
     "daisyui": "^2.17.0"
   }
 }
