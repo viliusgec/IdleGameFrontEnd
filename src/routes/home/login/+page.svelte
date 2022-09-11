@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { User, userData, login } from '../../stores/userStore';
+	throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
+	import { User, userData, login } from '../../../stores/userStore';
 	export let username: string = '', password: string = '';
 	userData.subscribe((value) => login(value as User));
 </script>

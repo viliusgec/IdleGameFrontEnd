@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Card from '../components/card.svelte';
-    import { trainingSkillData, loadTrainingSkillData } from '../stores/trainingSkillStore';
+	import Card from '../../components/card.svelte';
+    import { trainingSkillData, loadTrainingSkillData } from '../../stores/trainingSkillStore';
     loadTrainingSkillData('Woodcutting')
 </script>
 
